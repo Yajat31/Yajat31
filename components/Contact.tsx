@@ -6,7 +6,6 @@ import { Reveal } from "./Reveal";
 
 const links = [
   { label: site.email, href: `mailto:${site.email}` },
-  { label: site.phone, href: site.phoneHref },
   { label: "GitHub", href: site.github, external: true },
   { label: "LinkedIn", href: site.linkedin, external: true },
 ];
