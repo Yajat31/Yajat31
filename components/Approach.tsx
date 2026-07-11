@@ -1,5 +1,32 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
 import { approach } from "@/lib/data";
 import { Reveal } from "./Reveal";
+
+function ApproachCard({
+  item,
+  index,
+}: {
+  item: (typeof approach)[number];
+  index: number;
+}) {
+  const reduce = useReducedMotion();
+
+  return (
+    <Reveal delay={0.08 * index} className="approach-card" blur>
+      <motion.div
+        className="approach-card__inner"
+        whileHover={reduce ? undefined : { y: -4 }}
+        transition={{ type: "spring", stiffness: 360, damping: 28 }}
+      >
+        <p className="approach-card__verb">{item.verb}</p>
+        <h3 className="approach-card__title">{item.title}</h3>
+        <p className="approach-card__body">{item.body}</p>
+      </motion.div>
+    </Reveal>
+  );
+}
 
 export function Approach() {
   return (
@@ -15,11 +42,7 @@ export function Approach() {
 
       <div className="approach-grid">
         {approach.map((item, i) => (
-          <Reveal key={item.title} delay={0.08 * i} className="approach-card">
-            <p className="approach-card__verb">{item.verb}</p>
-            <h3 className="approach-card__title">{item.title}</h3>
-            <p className="approach-card__body">{item.body}</p>
-          </Reveal>
+          <ApproachCard key={item.title} item={item} index={i} />
         ))}
       </div>
     </section>

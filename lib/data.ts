@@ -48,21 +48,25 @@ export const projects = [
     title: "Dynamo-Style Distributed Key-Value Store",
     tags: ["Go", "Consistent Hashing", "Gossip", "gRPC"],
     body: "AP key-value store with virtual-node consistent hashing, configurable N/R/W quorums, hinted handoff, vector clocks, Merkle-tree anti-entropy, and gossip membership. Validated via Jepsen/Porcupine across 36 chaos permutations.",
+    href: "https://github.com/Yajat31/DS-project",
   },
   {
     title: "Index & Storage Benchmarking Suite",
     tags: ["Python", "Inverted Indices", "Compression"],
     body: "Boolean, word-count, and TF-IDF indices over a 50K+ Wikipedia corpus. VByte and zlib compression cut index size by up to 44% (1.77×) with under 5% added query latency.",
+    href: "https://github.com/Yajat31/Indexing-and-Retrieval-System-Benchmarking",
   },
   {
     title: "Distributed Network File System",
     tags: ["C", "TCP/IP", "Concurrency"],
     body: "Concurrent multi-server file system with a centralized naming service, LRU metadata caching, and fine-grained mutex synchronization to eliminate data races.",
+    href: "https://github.com/Yajat31/Network-file-system",
   },
   {
     title: "XV6 Kernel: Syscalls & Scheduler",
     tags: ["C", "xv6", "OS Internals"],
     body: "Custom system calls plus MLFQ and lottery scheduling in xv6. Benchmarked MLFQ against round-robin with ~13% lower average process wait time.",
+    href: "https://github.com/Yajat31/XV6-syscalls_scheduler",
   },
 ];
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
 import { Marquee } from "@/components/Marquee";
@@ -7,19 +9,27 @@ import { Work } from "@/components/Work";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
+import { Preloader } from "@/components/Preloader";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { Cursor } from "@/components/Cursor";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Intro />
-      <Marquee />
-      <About />
-      <Approach />
-      <Work />
-      <Experience />
-      <Skills />
-      <Contact />
-    </main>
+    <>
+      <Preloader />
+      <ScrollProgress />
+      <Cursor />
+      <main>
+        <Hero />
+        <Intro />
+        <Marquee />
+        <About />
+        <Approach />
+        <Work />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+    </>
   );
 }

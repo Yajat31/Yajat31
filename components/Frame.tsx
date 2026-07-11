@@ -133,9 +133,14 @@ export function Frame() {
                       e.preventDefault();
                       go(s.id);
                     }}
-                    initial={{ y: 24, opacity: 0 }}
+                    initial={{ y: 40, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.05 * i, duration: 0.45 }}
+                    transition={{
+                      delay: 0.06 * i,
+                      duration: 0.55,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    whileHover={{ x: 8, opacity: 0.65 }}
                   >
                     {s.label}
                   </motion.a>

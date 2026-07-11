@@ -1,5 +1,15 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { site } from "@/lib/data";
 import { Reveal } from "./Reveal";
+
+const links = [
+  { label: site.email, href: `mailto:${site.email}` },
+  { label: site.phone, href: site.phoneHref },
+  { label: "GitHub", href: site.github, external: true },
+  { label: "LinkedIn", href: site.linkedin, external: true },
+];
 
 export function Contact() {
   return (
@@ -13,28 +23,19 @@ export function Contact() {
         </p>
 
         <div className="contact__links">
-          <a className="contact__link" href={`mailto:${site.email}`}>
-            {site.email}
-          </a>
-          <a className="contact__link" href={site.phoneHref}>
-            {site.phone}
-          </a>
-          <a
-            className="contact__link"
-            href={site.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            className="contact__link"
-            href={site.linkedin}
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
+          {links.map((link) => (
+            <motion.a
+              key={link.label}
+              className="contact__link"
+              href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noreferrer" : undefined}
+              whileHover={{ y: -2 }}
+              transition={{ type: "spring", stiffness: 400, damping: 24 }}
+            >
+              {link.label}
+            </motion.a>
+          ))}
         </div>
 
         <p className="footer-note">

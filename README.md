@@ -28,10 +28,10 @@ I work at the intersection of **distributed systems**, **backend engineering**, 
 
 | Project | Stack | Focus |
 | :--- | :--- | :--- |
-| **Dynamo-Style KV Store** | Go · gRPC · Gossip | Consistent hashing, N/R/W quorums, vector clocks, Merkle anti-entropy — Jepsen/Porcupine validated |
-| **Index & Storage Benchmarks** | Python · Compression | Inverted indices over 50K+ docs; up to **1.77×** size reduction |
-| **Distributed Network FS** | C · TCP/IP | Concurrent multi-server FS with LRU metadata caching |
-| **XV6 Scheduler** | C · xv6 | MLFQ + lottery scheduling; **~13%** lower wait time vs RR |
+| [**Dynamo-Style KV Store**](https://github.com/Yajat31/DS-project) | Go · gRPC · Gossip | Consistent hashing, N/R/W quorums, vector clocks, Merkle anti-entropy — Jepsen/Porcupine validated |
+| [**Index & Storage Benchmarks**](https://github.com/Yajat31/Indexing-and-Retrieval-System-Benchmarking) | Python · Compression | Inverted indices over 50K+ docs; up to **1.77×** size reduction |
+| [**Distributed Network FS**](https://github.com/Yajat31/Network-file-system) | C · TCP/IP | Concurrent multi-server FS with LRU metadata caching |
+| [**XV6 Scheduler**](https://github.com/Yajat31/XV6-syscalls_scheduler) | C · xv6 | MLFQ + lottery scheduling; **~13%** lower wait time vs RR |
 
 ---
 
@@ -49,10 +49,15 @@ Data        PostgreSQL · MongoDB · Redis · Docker
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=Yajat31&show_icons=true&theme=graywhite&hide_border=true&bg_color=e8e7ec&title_color=1a1a1c&icon_color=3a3a40&text_color=3a3a40" height="165" alt="GitHub stats" />
+&nbsp;
 <img src="https://github-readme-streak-stats.demolab.com/?user=Yajat31&theme=graywhite&hide_border=true&background=e8e7ec&ring=1a1a1c&fire=3a3a40&currStreakLabel=1a1a1c" height="165" alt="GitHub streak" />
 
 <br/><br/>
 
-<sub>Portfolio live at <a href="https://yajat31.github.io/Yajat31/"><strong>yajat31.github.io/Yajat31</strong></a></sub>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yajat31&layout=compact&theme=graywhite&hide_border=true&bg_color=e8e7ec&title_color=1a1a1c&text_color=3a3a40" height="165" alt="Top languages" />
+
+<br/><br/>
+
+<sub>Portfolio live at <a href="https://yajat31.github.io/Yajat31/"><strong>yajat31.github.io/Yajat31</strong></a> · Open to research collabs & systems work</sub>
 
 </div>
