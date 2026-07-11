@@ -12,6 +12,8 @@ import { Contact } from "@/components/Contact";
 import { Preloader } from "@/components/Preloader";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Cursor } from "@/components/Cursor";
+import { Seal } from "@/components/Seal";
+import { ScrollFX } from "@/components/ScrollFX";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Preloader />
       <ScrollProgress />
       <Cursor />
+      <Seal />
+      <ScrollFX />
       <main>
         <Hero />
         <Intro />
